@@ -149,3 +149,36 @@
             }
           ]
         }
+
+### 是否报名/报名详情 [GET] /activityRosters/detail
+       
++ Description
+    + [MUST] Authenticated
+       
++ Response 200 (application/json)  
++ 可根据alreadyRegistered字段判断是否已报名true/false:已报名/未报名
+
+        {
+          "data": {
+            "alreadyRegistered": true,
+            "detail": {
+              "id": 6,
+              "enabled": 1,
+              "creator": 1031,
+              "modifier": 1031,
+              "created": "2018-06-10 15:18:27",
+              "modified": "2018-06-10 15:18:27",
+              "userId": 1031,
+              "phoneNumber": "18611194890",
+              "fullName": "张永伟",
+              "email": "zyweicw@126.com",
+              "city": "北京",
+              "position": "程序猿",
+              "jobNature": "私企",
+              "jobYears": "四年",
+              "makingType": "nicai",
+              "hopeSkill": "yes",
+              "hopeOnsite": 1
+            }
+          }
+        }
