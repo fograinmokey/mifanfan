@@ -87,7 +87,6 @@
 
         {
           "data": {
-            "fullName": "张dada伟",
             "id": 6,
             "type": "/activityRosters"
           }
