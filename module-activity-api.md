@@ -1,7 +1,8 @@
 ## 活动报名
 + 2018年6月10日
     + API初始化
-
++ 2018年6月12日
+    + 添加微信登录接口
 
 + Data
     + ActivityRosters - 活动报名表
@@ -182,3 +183,23 @@
             }
           }
         }
+
+### 微信登录（微信客户端） [GET] 
+    https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx20250f71156b4d41&redirect_uri=http://www.mifanxing.com/api/user/oauth/weChat?redirect=登录完成后想要跳转的页面&response_type=code&scope=snsapi_userinfo&state=wechatpub#wechat_redirect
+
++ Parameters
+    + appid - 固定值wx20250f71156b4d41
+    + redirect_uri - 需要urlencode编码
+    + response_type - 固定值code
+    + scope - 固定值snsapi_userinfo
+    + state - 固定值wechatpub
+
+### 微信登录 （非微信客户端）[GET]
+    https://open.weixin.qq.com/connect/qrconnect?appid=wxd6142addd37f819a&redirect_uri=http://www.mifanxing.com/api/user/oauth/weChat?redirect=登录完成后想要跳转的页面&response_type=code&scope=snsapi_login&state=wechatweb#wechat_redirect
+    
++ Parameters
+    + appid - wxd6142addd37f819a
+    + redirect_uri - 需要urlencode编码
+    + response_type - 固定值code
+    + scope - 固定值snsapi_login
+    + state - wechatweb
