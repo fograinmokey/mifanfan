@@ -1,7 +1,6 @@
+## 海报集锦管理
 + 2018年7月6日
      + API初始化
-     
-## 海报集锦管理
 + Data
     + id (Long) - ID
     + title (String) - 标题
@@ -101,7 +100,7 @@
 + Response (application/json)
 
 
-### 查询海报集详情 [GET] /posters/{id}
+### 查询海报集锦详情（客户端）[GET] /posters/{id}
 + Parameters
     + id 
     
@@ -148,8 +147,7 @@
             }
         }
 
-
-### 查询海报集锦列表 [GET]  /posters?page[number]=1&page[size]=10 
+### 查询海报集锦列表 （客户端）[GET]  /posters?page[number]=1&page[size]=10 
     
 + Response 200 (application/json)
 
@@ -268,9 +266,31 @@
             ]
         }
 
-
 ### 删除 [DELETE] /posters/{id}
 + Description
   + [MUST]  Authenticated
   + [MUST] ROLE_ADMIN 
 +  Response 204
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
